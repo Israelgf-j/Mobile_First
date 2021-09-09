@@ -75,3 +75,31 @@ header img {
     line-height: 1.8rem;        /* Esto es la separacion entre lineas */
     color: var(--soft-orange);
 }
+
+.header--title--container .header--button {
+    position: absolute;
+    left: calc(50% - 117px); /* Hace un calculo para posicionar el boton, el 50% de 229px que es su propio width de contenedor, a ese 229/2 le restas 117px, para ser mas simetricos, solo toma 114.5px */
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("./assets/iconos/Vector.svg");
+}
