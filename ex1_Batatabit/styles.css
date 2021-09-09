@@ -39,22 +39,39 @@ header {
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    /* El gradiente lineal nos hace un difuminado o un degradado de los colores, investigas que es los grados deg y como usar los porcentajes, segun es como  el porcentaje que usara de cada color */
 }
 
 header img {
     width: 150px;
     height: 24px;
     margin-top: 60px;
-    align-self: center;
+    align-self: center;     /* Esto es para centrar un elemento hijo que su padre tiene display flex, esto centra automaticamente todo el contenedor div con esa clase */
 }
 
 .header--title--container {
     width: 90%;
-    min-width: 288px;
-    max-width: 900px;
+    min-width: 288px;       /* Esto se va a achicar hasta un limite de 288px, de ahi no pasa */
+    max-width: 900px;       /* Esto crecerá hasta llegar a los 900px, de ahi no pasa */
     height: 218px;
     margin-top: 40px;
-    text-align: center;
-    align-self: center;
+    text-align: center;         /* Aqui alineamos el texto al centro */
+    align-self: center;             /* Esto es para centrar un elemento hijo que su padre tiene display flex, esto centra automaticamente todo el contenedor div con esa clase */
 }
 
+.header--title--container h1 {      /* Aqui somos muy especificos con la llamada para el estilo, no sabemos si habra mas h1 en el header, por buena practica, solo se usa uno pero puede haber mas, asi que al entrar directamente al contenedor nos "div" aseguramos que tome directamente el h1 del "div" */
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;          /* Esto es la separacion entre lineas */
+    color: var(--just-white);
+}
+
+.header--title--container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;           /* Elige la fuente de 500 que habiamos descargado de google fonts */
+    line-height: 1.8rem;        /* Esto es la separacion entre lineas */
+    color: var(--soft-orange);
+}
