@@ -77,7 +77,7 @@ header img {
 }
 
 .header--title--container .header--button {
-    position: absolute;
+    position: absolute;     /* Posiciona un objeto de manera relativa a su contenedor padre y asi poder ponerlo en cualquier posicion incluso sobre otros elementos */
     left: calc(50% - 117px); /* Hace un calculo para posicionar el boton, el 50% de 229px que es su propio width de contenedor, a ese 229/2 le restas 117px, para ser mas simetricos, solo toma 114.5px */
     top: 270px;
     display: block;
@@ -102,4 +102,53 @@ header img {
     height: 8px;
     margin-left: 10px;
     background-image: url("./assets/iconos/Vector.svg");
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./assets/bitcoin.svg');
+    /* Propiedades de las imagnes */
+    background-size: cover;
+    background-position: center;        /* Para poder posicionar siempre la imagen en el centro */
+    background-repeat: no-repeat;       /* Si la imagen fuese mas chica que el contenedor, lo que hara el background-image sera repetir la imagen para abarcar el contenido de su contenedor */
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575
 }
