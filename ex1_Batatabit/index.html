@@ -27,8 +27,32 @@
                 <p>Traemos información en tiempo real de las casa de cambio y las monedas más importantes del mundo</p>
             </div>
             <section class="main-tables-container">
-                <div>
-
+                <div class="main-currency-table">    <!-- -este contiene a el parrafo de monedas, las tablas y el texto de actualizado, 3 elementos principales -->
+                    <p class="currency-table--title">Monedas</p>    <!-- Segun la metodologia BEM, '''currency-table''' es el BLOQUE y '''--title''' es el ELEMENTO a modificar o nombre de la etiqueta, y debe ir referenciado al bloque padre o contenedor, por eso: '''currency-table--title'''-->
+                    <div class="currency-table--container">       <!-- Contenedor de mi tabla, clase: "referenciada al BLOQUE padre y con --nombre_de_la_etiqueta" o ELEMENTO -->
+                        <table>
+                            <tr>        <!-- Hace referencia a las filas de las tablas -->
+                                <td class="table__top-left">Bitcoin</td>       <!-- referencía a la info dentro de las filas, clase referenciada de un ELEMENTO a MODIFICADOR-->
+                                <td class="table__top-right table__right">$ 1.96 <span>i</span></td>
+                            </tr>
+                            <tr>        <!-- Hace referencia a las filas de las tablas -->
+                                <td>Ethereum</td>       <!-- referencía a la info dentro de las filas -->
+                                <td class="table__right">$ 0.07 <span>i</span></td>
+                            </tr>
+                            <tr>        <!-- Hace referencia a las filas de las tablas -->
+                                <td>Ripple</td>       <!-- referencía a la info dentro de las filas -->
+                                <td class="table__right">$ 2.15 <span>i</span></td>
+                            </tr>
+                            <tr>        <!-- Hace referencia a las filas de las tablas -->
+                                <td class="table__bottom-left">Stellar</td>       <!-- referencía a la info dentro de las filas -->
+                                <td class="table__bottom-right table__right">$ 4.96 <span>i</span></td>
+                            </tr>
+                            <!-- Se le pone una clase extra al precio porque si te fijas en el modelo el precio viene con una fuente y color diferente, por eso se le pone otra clase, para poder darle estilo a esa parte de la tabla -->
+                        </table>
+                    </div>
+                    <div class="currency-table--date">
+                        <p> <b>Actualizado:</b> 19 Julio 23:45</p>
+                    </div>
                 </div>
             </section>
         </section>
