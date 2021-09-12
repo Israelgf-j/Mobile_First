@@ -35,19 +35,19 @@
                         <table>
                             <tr>        <!-- Hace referencia a las filas de las tablas -->
                                 <td class="table__top-left">Bitcoin</td>       <!-- referencía a la info dentro de las filas, clase referenciada de un ELEMENTO a MODIFICADOR-->
-                                <td class="table__top-right table__right">$ 1.96 <span>i</span></td>
+                                <td class="table__top-right table__right">$ 1.96 <span class="down"></span></td>
                             </tr>
                             <tr>        <!-- Hace referencia a las filas de las tablas -->
                                 <td>Ethereum</td>       <!-- referencía a la info dentro de las filas -->
-                                <td class="table__right">$ 0.07 <span>i</span></td>
+                                <td class="table__right">$ 0.07 <span class="up"></span></td>
                             </tr>
                             <tr>        <!-- Hace referencia a las filas de las tablas -->
                                 <td>Ripple</td>       <!-- referencía a la info dentro de las filas -->
-                                <td class="table__right">$ 2.15 <span>i</span></td>
+                                <td class="table__right">$ 2.15 <span class="down"></span></td>
                             </tr>
                             <tr>        <!-- Hace referencia a las filas de las tablas -->
                                 <td class="table__bottom-left">Stellar</td>       <!-- referencía a la info dentro de las filas -->
-                                <td class="table__bottom-right table__right">$ 4.96 <span>i</span></td>
+                                <td class="table__bottom-right table__right">$ 4.96 <span class="down"></span></td>
                             </tr>
                             <!-- Se le pone una clase extra al precio porque si te fijas en el modelo el precio viene con una fuente y color diferente, por eso se le pone otra clase, para poder darle estilo a esa parte de la tabla -->
                         </table>
@@ -62,7 +62,7 @@
                     <p class="commissions-table--title">Comisiones</p>
                     <div class="commissions-table--container">
                         <table>
-                            <tr>
+                            <tr>    <!-- Se le agrega estilos a las partes exteriores de la tabla porque la tabla lleva las esquinas redondeadas, no podemos darle ese estilo a toda la tabla porque la etiqueta TABLE no es visual, si le dieramos estilos no los veriamos porque no es visual, por eso se le da estilo a cada esquina de las partes de la tabla -->
                                 <td class="table__top-left">Bitrade</td>
                                 <td class="table__top-right table__right">$ 12.96</td>
                             </tr>
